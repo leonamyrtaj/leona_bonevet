@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f3f0ff;
+            color: #2d2640;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(
+            135deg,
+           #f4f3fa,
+           #d8b4fe,
+           #bba9f0
+        );
+            color: black;
+            text-align: center;
+            padding: 25px;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            box-shadow: 0px 4px 10px 20;
+        }
+
+        
+
+        header h1 {
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    color: #593e8f;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#nav-bar a {
+    color: rgb(134, 134, 218);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#nav-bar a:hover {
+    color: rgb(167, 167, 240);
+    transform: translateY(-2px);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 60px 8%;
+    flex-wrap: wrap;
+    border: 3px solid #ad9fce;
+    border-radius: 15px;
+    background-color: white;
+}
+
+
+.rrethmeje,
+.aftesite {
+    background-color: white;
+    flex: 1.1 300px;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 0 5px 20px #6c4ab620;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rrethmeje:hover,
+.aftesite:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #6c4ab630;
+}
+
+.rrethmeje h3,
+.aftesite h3 {
+    color: #6c4ab6;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.rrethmeje p {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #f7f3ff;
+    
+}
+
+#list,
+#listt {
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+#list h4 {
+    color: #6c4ab6;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#list li,
+#listt li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #f7f3ff;
+    
+}
+
+#list li::marker,
+#listt li::marker {
+    color: #9b72cf;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #352653;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 20px;
+}
+     
+    </style>
+</head>
+<body>
+    <header>
+
+      <h1 id="titulli">CV e imja</h1>
+      <nav id="nav-bar">
+          <a href="Rrethmeje">Rreth meje</a>
+          <a href="Aftesitë">Aftesitë e mija ne IT</a>
+      </nav>
+
+    </header>
+
+    <section>
+
+      <div class="rrethmeje">
+          <h3>Rreth meje:</h3>
+          <p>Emri: Leona Myrtaj</p>
+          <p>Mosha: 16</p>
+          <p>Klasa: 11</p>
+          <p>Shkolla: SH.M.E "Gjin Gazulli"</p>
+
+          <ol id="list">
+              <h4>Hobit e mia:</h4>
+              <li>Vizatim</li>
+              <li>Not</li>
+              <li>Fitness</li>
+              <li>Voleyboll</li>
+          </ol>
+      </div>
+
+       <div class="aftesite">
+            <ul id="listt">
+                <h3>Aftësitë e mia në fushën e IT:</h3>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Kjo është një CV e imja personale.</p>
+    </footer>
+</body>
+</html>
